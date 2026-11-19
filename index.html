@@ -38,7 +38,9 @@ header{position:sticky;top:0;z-index:20;background:rgba(251,250,253,.95);backdro
 .bar{display:flex;align-items:center;justify-content:space-between;gap:24px;height:110px}
 .logo img{height:104px;width:auto}
 nav{display:flex;align-items:center;gap:30px}
-nav a:not(.btn){text-decoration:none;font-weight:500;font-size:16px}
+nav a:not(.btn){text-decoration:none;font-weight:500;font-size:16px;white-space:nowrap}
+nav .btn{white-space:nowrap}
+@media (min-width:981px) and (max-width:1180px){nav{gap:18px}.logo img{height:88px}}
 nav a:not(.btn):hover{color:var(--plum);text-decoration:underline;text-underline-offset:5px}
 .menu-btn{display:none;min-height:44px;padding:0 16px;background:none;border:1.5px solid var(--line);border-radius:999px;font:600 15px var(--sans);color:var(--ink);cursor:pointer}
 
@@ -191,6 +193,7 @@ textarea{min-height:120px;resize:vertical}
     <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav id="nav" aria-label="Main">
       <a href="#services">Services</a>
+      <a href="new-clients.html">New clients</a>
       <a href="#waterless">Why waterless</a>
       <a href="#gallery">Gallery</a>
       <a href="#team">Our team</a>
