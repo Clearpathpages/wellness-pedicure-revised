@@ -4,6 +4,7 @@ The original Wellness Pedicures design demo, plus a **new-client assessment page
 
 - `index.html` – home page (adds links to the assessment in the hero and the "Your first visit" steps)
 - `booking.html` – service menu with Square booking (the Callus Therapy note now links to the assessment)
+- `privacy.html` – privacy policy, linked from every footer
 - `new-clients.html` – assessment form; submissions and photos go to the Wellness Pedicures Base44 app (`ClientIntake` records, private file storage)
 
 Design demo for client review. Not the live website.
