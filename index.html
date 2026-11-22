@@ -188,6 +188,30 @@ textarea{min-height:120px;resize:vertical}
   .people{gap:16px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+.care-for{margin-top:48px;padding:28px 32px;border-radius:20px;background:var(--lilac)}
+.care-for h3{font-size:28px;color:var(--plum-deep)}
+.care-for ul{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.care-for li{padding:8px 16px;border-radius:999px;background:#fff;color:var(--plum-deep);font-weight:500;font-size:15px}
+.care-for p{margin-top:16px;color:var(--muted)}
+.before-after{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:520px;margin-top:40px}
+.before-after figure{margin:0;position:relative}
+.before-after img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:14px;background:var(--lilac)}
+.before-after figcaption{position:absolute;top:12px;left:12px;padding:4px 12px;border-radius:999px;background:var(--plum-deep);color:#fff;font-size:14px;font-weight:600}
+.before-after p{grid-column:1/-1;color:var(--muted)}
+.stats{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.stats li{font-size:15px;color:var(--muted);line-height:1.35}
+.stats b{display:block;font:500 26px/1.1 var(--serif);color:var(--plum-deep);margin-bottom:4px}
+.partner-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,88px);align-items:start}
+.partner-intro{color:var(--muted);margin:18px 0 28px;font-size:19px}
+.partner-mail{margin-top:14px;font-size:15px;color:var(--muted)}
+.partner-mail a{color:var(--plum);font-weight:600}
+.partner-cols{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.partner-cols h3{font-size:26px;color:var(--plum-deep);padding-bottom:12px;border-bottom:1px solid var(--line)}
+.partner-cols ul{margin:14px 0 0;padding-left:20px;color:var(--ink)}
+.partner-cols li{margin-top:8px}
+@media (max-width:980px){.partner-grid{grid-template-columns:1fr}}
+@media (max-width:640px){.partner-cols,.stats{grid-template-columns:1fr}.stats{gap:12px}.care-for{padding:22px}}
 </style>
 </head>
 <body>
@@ -214,7 +238,7 @@ textarea{min-height:120px;resize:vertical}
   <section class="hero">
     <div class="hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow">Medical, waterless pedicures in Davie, FL</p>
+        <p class="eyebrow">Certified medical pedicure organization in Davie, FL · Se habla español</p>
         <h1>Healing <em>one toe at a time.</em></h1>
         <p class="lede">Medically guided, waterless pedicures that combine expert foot care with luxurious relaxation, in a safe, hygienic setting.</p>
         <div class="actions">
@@ -250,6 +274,13 @@ textarea{min-height:120px;resize:vertical}
         <div class="panel" role="tabpanel" tabindex="0" id="panel"></div>
       </div>
       <p class="more">Looking for something else? <a href="booking.html">See every service in our booking menu</a>.</p>
+      <div class="care-for">
+        <h3>Care designed for</h3>
+        <ul>
+          <li>Diabetes</li><li>Autoimmune conditions</li><li>Cancer recovery</li><li>Athletes</li><li>On your feet all day</li><li>Seniors</li><li>Men</li><li>Moms-to-be</li>
+        </ul>
+        <p>We also offer athlete foot care and callus &amp; heel care, plus additional services tailored to your needs.</p>
+      </div>
     </div>
   </section>
 
@@ -281,6 +312,11 @@ textarea{min-height:120px;resize:vertical}
         <button class="shot" type="button"><img loading="lazy" src="https://img1.wsimg.com/isteam/ip/32b01113-af95-47be-ad0e-20ae0de2095b/blob.png/:/rs=w:700" data-full="https://img1.wsimg.com/isteam/ip/32b01113-af95-47be-ad0e-20ae0de2095b/blob.png/:/rs=w:1200" alt="Close-up of a client's toes and toenails resting on a dark towel"><span>Healthy Nails &amp; Nail Care</span></button>
         <button class="shot" type="button"><img loading="lazy" src="https://img1.wsimg.com/isteam/ip/32b01113-af95-47be-ad0e-20ae0de2095b/IMG_0155.JPG/:/rs=w:700" data-full="https://img1.wsimg.com/isteam/ip/32b01113-af95-47be-ad0e-20ae0de2095b/IMG_0155.JPG/:/rs=w:1200" alt="Top view of a client's foot with neatly shaped toenails"><span>Comfort &amp; Wellness Pedicures</span></button>
         <button class="shot" type="button"><img loading="lazy" src="https://img1.wsimg.com/isteam/ip/32b01113-af95-47be-ad0e-20ae0de2095b/IMG_0182.JPG/:/rs=w:700" data-full="https://img1.wsimg.com/isteam/ip/32b01113-af95-47be-ad0e-20ae0de2095b/IMG_0182.JPG/:/rs=w:1200" alt="Angled view of a client's foot and toenails on a tiled floor"><span>Foot Health &amp; Relaxation</span></button>
+      </div>
+      <div class="before-after">
+        <figure><img loading="lazy" src="images/before.jpg" width="605" height="807" alt="Before treatment: a client's toenails, thickened and discolored"><figcaption>Before</figcaption></figure>
+        <figure><img loading="lazy" src="images/after.jpg" width="605" height="807" alt="After treatment: the same client's toenails, clearer and neatly groomed"><figcaption>After</figcaption></figure>
+        <p>Nail restoration with a flexible, UV-cured gel resin that restores damaged or missing nails.</p>
       </div>
     </div>
   </section>
@@ -314,10 +350,15 @@ textarea{min-height:120px;resize:vertical}
           <p class="eyebrow">Our team</p>
           <h2>Your feet are in caring hands.</h2>
           <p>Our trained and certified team proudly delivers health-focused waterless pedicures, guided by top medical professionals. Our mission is simple: to make foot health safe, comfortable, and accessible, so every client leaves healthier and cared for.</p>
+          <ul class="stats">
+            <li><b>20+ years</b>Experience</li>
+            <li><b>3,000+ clients</b>Trusted since 2024</li>
+            <li><b>Sterile protocols</b>Single-use instruments</li>
+          </ul>
         </div>
       </div>
       <div class="people">
-        <article><img loading="lazy" src="https://img1.wsimg.com/isteam/ip/32b01113-af95-47be-ad0e-20ae0de2095b/blob-f76c9d1.png/:/rs=w:640" alt="Portrait of Jay Mella-Mignon"><h3>Jay Mella-Mignon</h3><p class="role">Co-Founder, Lead Medical Nail Technician and Instructor</p><p>Brings artistry and expertise to your service.</p></article>
+        <article><img loading="lazy" src="https://img1.wsimg.com/isteam/ip/32b01113-af95-47be-ad0e-20ae0de2095b/blob-f76c9d1.png/:/rs=w:640" alt="Portrait of Jay Mella-Mignon"><h3>Jay Mella-Mignon</h3><p class="role">Co-Founder, Lead Certified Advanced Medical Nail Technician and Instructor</p><p>Certified in Oncology Pedicure Care. Brings artistry and expertise to your service.</p></article>
         <article><img loading="lazy" src="https://img1.wsimg.com/isteam/ip/32b01113-af95-47be-ad0e-20ae0de2095b/blob-1ee50c9.png/:/rs=w:640" alt="Portrait of Alexandra"><h3>Alexandra</h3><p class="role">Co-Founder</p><p>Dedicated to growth and client care.</p></article>
         <article><img loading="lazy" src="https://img1.wsimg.com/isteam/ip/32b01113-af95-47be-ad0e-20ae0de2095b/_C0A2625.jpg/:/rs=w:640" alt="Portrait of Jazzy"><h3>Jazzy</h3><p class="role">Licensed Nail Technician</p><p>Ensures your nails look perfect.</p></article>
         <article><img loading="lazy" src="https://img1.wsimg.com/isteam/ip/32b01113-af95-47be-ad0e-20ae0de2095b/blob-285e47e.png/:/rs=w:640" alt="Portrait of Desiree"><h3>Desiree</h3><p class="role">Operations Manager</p><p>Keeps everything running smoothly.</p></article>
@@ -332,6 +373,28 @@ textarea{min-height:120px;resize:vertical}
       <div class="quotes">
         <blockquote><span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span><p>"OMG… words can't describe the customer service and treatment I just got! Issues with both feet from wearing the wrong sneakers for too long. Called Wellness Pedicures and was so impressed as soon as I walked through the door. The owner Judith, and my tech, Sara, made me feel so comfortable and relaxed. I can now walk without pain. I WILL be back and can't wait until my next visit. I highly recommend this place!"</p><footer>Michele Singer, Google review</footer></blockquote>
         <blockquote><span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span><p>"Recently, I took my diabetic grandmother in for a wellness pedicure, and I honestly can't say enough amazing things about the experience. From the moment we walked in, everyone was so welcoming, kind, and attentive.</p><p>My grandmother was beyond grateful for the care and attention she received. She was so happy with how wonderful her feet looked and, most importantly, how comfortable and cared for she felt throughout the entire experience.</p><p>She's already excited for her next appointment. Thank you for making such a positive difference and giving her an experience she truly enjoyed. Highly recommend!"</p><footer>Katherine, Google review</footer></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="partner" id="partner">
+    <div class="wrap partner-grid">
+      <div>
+        <p class="eyebrow">Partner with us</p>
+        <h2>Bringing safe, medically guided foot care to more people.</h2>
+        <p class="partner-intro">We work with podiatrists, care communities, employers, and vendors to reach the people who need foot care most.</p>
+        <a class="btn" href="mailto:wp.info@wellness-pedicures.com?subject=Partnership%20meeting%20request">Request a meeting</a>
+        <p class="partner-mail">or email <a href="mailto:wp.info@wellness-pedicures.com">wp.info@wellness-pedicures.com</a></p>
+      </div>
+      <div class="partner-cols">
+        <div>
+          <h3>Who we serve</h3>
+          <ul><li>Individuals and families</li><li>Diabetic and senior clients</li><li>Podiatry and medical practices</li><li>Senior living and care communities</li><li>Employers and wellness programs</li></ul>
+        </div>
+        <div>
+          <h3>Why partner with us</h3>
+          <ul><li>Trusted referral partner for podiatrists</li><li>On-site and mobile foot care services</li><li>Co-branded events and health education</li><li>Open to product and supply vendors</li><li>Bilingual English/Spanish service</li></ul>
+        </div>
       </div>
     </div>
   </section>
