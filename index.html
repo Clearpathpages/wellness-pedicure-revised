@@ -124,7 +124,9 @@ dialog img{width:100%;max-height:74vh;object-fit:contain;background:var(--ink)}
 
 .quotes{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,80px);margin-top:40px}
 blockquote{margin:0}
-blockquote p{font:400 clamp(25px,2.8vw,36px)/1.25 var(--serif);color:var(--plum-deep);letter-spacing:-.01em}
+blockquote p{font:400 clamp(20px,1.8vw,24px)/1.4 var(--serif);color:var(--plum-deep)}
+blockquote p+p{margin-top:14px}
+.stars{display:block;margin-bottom:14px;color:#e2a400;font-size:20px;letter-spacing:3px}
 blockquote footer{margin-top:18px;font-size:16px;color:var(--muted)}
 
 .visit{background:var(--lilac)}
@@ -328,8 +330,8 @@ textarea{min-height:120px;resize:vertical}
       <p class="eyebrow">Client stories</p>
       <h2>From the people we've cared for.</h2>
       <div class="quotes">
-        <blockquote><p>"A truly rejuvenating pedicure! The detail, atmosphere, and care made me feel pampered from start to finish. Highly recommend for wellness and beauty."</p><footer>Claudia Prinstein, April 2025</footer></blockquote>
-        <blockquote><p>"Relaxing experience! Andrea was fantastic. I'll be back!"</p><footer>Tae Nelson, April 2025</footer></blockquote>
+        <blockquote><span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span><p>"OMG… words can't describe the customer service and treatment I just got! Issues with both feet from wearing the wrong sneakers for too long. Called Wellness Pedicures and was so impressed as soon as I walked through the door. The owner Judith, and my tech, Sara, made me feel so comfortable and relaxed. I can now walk without pain. I WILL be back and can't wait until my next visit. I highly recommend this place!"</p><footer>Michele Singer, Google review</footer></blockquote>
+        <blockquote><span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span><p>"Recently, I took my diabetic grandmother in for a wellness pedicure, and I honestly can't say enough amazing things about the experience. From the moment we walked in, everyone was so welcoming, kind, and attentive.</p><p>My grandmother was beyond grateful for the care and attention she received. She was so happy with how wonderful her feet looked and, most importantly, how comfortable and cared for she felt throughout the entire experience.</p><p>She's already excited for her next appointment. Thank you for making such a positive difference and giving her an experience she truly enjoyed. Highly recommend!"</p><footer>Katherine, Google review</footer></blockquote>
       </div>
     </div>
   </section>
