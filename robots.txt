@@ -1,0 +1,5 @@
+# Wellness Pedicures
+User-agent: *
+Allow: /
+
+Sitemap: https://clearpathpages.github.io/wellness-pedicure-revised/sitemap.xml
